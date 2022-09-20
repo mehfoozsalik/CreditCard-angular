@@ -1,0 +1,193 @@
+.angularLogo {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  width: 10rem;
+}
+.main-container {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  height: 100%;
+  width: 100%;
+  max-width: 1200px;
+}
+.card-holder {
+  position: relative;
+  max-width: 600px;
+  width: 500px;
+  margin: 0 auto;
+}
+.card-one,
+.card-two {
+  width: 288px;
+  height: 159px;
+}
+.card-one {
+  position: absolute;
+  z-index: 2;
+  top: 125px;
+  left: 20px;
+  border-radius: 8px;
+  background: url("../assets/bg-card-front.png") center / 288px 159px no-repeat;
+}
+.card-two {
+  position: absolute;
+  top: 30px;
+  right: 20px;
+  z-index: 1;
+  border-radius: 8px;
+  background: url("../assets/bg-card-back.png") center / 288px 159px no-repeat;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.errorBorder {
+  border: 2px solid tomato;
+}
+.errormessage {
+  font-size: 12px;
+  color: tomato;
+  font-weight: 600;
+}
+.input-collection-holder {
+  display: flex;
+  gap: 10px;
+}
+.name-date {
+  text-transform: capitalize;
+  font-size: 10px;
+  color: white;
+}
+.secure-holder {
+  display: grid;
+  grid-template-columns: 40% auto;
+  gap: 10px;
+}
+.text-container-card {
+  width: 248px;
+  position: absolute;
+  top: 85px;
+  left: 20px;
+  display: grid;
+  gap: 5px;
+}
+.name-date-container {
+  display: flex;
+  justify-content: space-between;
+}
+.input-holder-form {
+  margin: 0 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.completePage {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin: 0 20px;
+  align-items: center;
+}
+.completePage img {
+  width: 80px;
+}
+.holder-name {
+  width: 100%;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 36px;
+  letter-spacing: 0.1em;
+  color: white;
+  text-shadow: 1.2px 1.2px 0px #868686, 1px 1px 0px #868686,
+    0.8px 0.8px 0px #868686, 0.6px 0.6px 0px #868686, 0.4px 0.4px 0px #868686,
+    0.2px 0.2px 0px #868686;
+}
+.holder-name-Active {
+  border: 1px solid white;
+  border-radius: 4px;
+}
+.cardlogo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+}
+.cvc {
+  font-weight: 700;
+  position: absolute;
+  top: 67.5px;
+  right: 32px;
+  font-size: 16px;
+}
+h4 {
+  font-size: 18px;
+  font-weight: 500;
+  color: #868686;
+}
+/* 664 */
+@media only screen and (min-width: 710px) {
+  .main-container {
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    padding: 0 40px;
+  }
+  .card-holder {
+    width: 100%;
+    min-width: 330px;
+    height: 250px;
+  }
+  .card-one {
+    top: 0;
+    left: 0;
+  }
+  .card-two {
+    top: auto;
+    bottom: 0;
+    right: 0;
+  }
+}
+@media screen and (min-width: 1224px) {
+  .card-holder {
+    width: 100%;
+    min-width: 530px;
+    height: 512px;
+  }
+  .card-one,
+  .card-two {
+    width: 447px;
+    height: 245px;
+  }
+  .card-one {
+    background: url("../assets/bg-card-front.png") center / 447px 245px
+      no-repeat;
+  }
+  .card-two {
+    background: url("../assets/bg-card-back.png") center / 447px 245px no-repeat;
+  }
+  .text-container-card {
+    width: 402px;
+    position: absolute;
+    top: 138px;
+    left: 20px;
+    display: grid;
+    gap: 20px;
+  }
+  .holder-name {
+    font-size: 28px;
+  }
+  .cardlogo {
+    width: 80px;
+  }
+  .name-date {
+    font-size: 16px;
+  }
+  .cvc {
+    top: 106px;
+    right: 50px;
+    font-size: 24px;
+  }
+}
